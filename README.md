@@ -10,7 +10,7 @@ presented by Thomas O'Rourke, [Pedro Tiago Martins](https://ptmartins.info), and
 - a brief summary of what was presented, below
 
 # Summary
-**Gene expression under human self-domestication: an in silico exploration of modern human high-frequency variants**
+**Gene expression under human self-domestication: an in silico exploration of modern human high-frequency variants**  
 Thomas O'Rourke<sup>1</sup>, Pedro Tiago Martins<sup>1,2</sup>, Alejandro Andirkó<sup>1</sup>  
 <sup>1</sup>*University of Barcelona*
 <sup>2</sup>*University of Ljubljana*
