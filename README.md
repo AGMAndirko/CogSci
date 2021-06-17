@@ -7,4 +7,15 @@ presented by Thomas O'Rourke, Pedro Tiago Martins, and Alejandro Andirkó as a s
 - code
 - supplemental figures
 - the poster presented at the meeting
+- a brief write-up of what was presented, below
 
+## Introduction
+
+	### Domestication syndrome
+	### Glutamate receptors
+
+## Hypothesis
+
+## Methods
+
+## Results
