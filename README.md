@@ -11,8 +11,8 @@ presented by Thomas O'Rourke, Pedro Tiago Martins, and Alejandro Andirkó as a s
 
 ## Introduction
 
-	### Domestication syndrome
-	### Glutamate receptors
+### Domestication syndrome
+### Glutamate receptors
 
 ## Hypothesis
 
