@@ -1,0 +1,2 @@
+sed 's/,/\t/g' 'Peyregne 2017.vcf' | awk '{print $1, $2, "-", $4, $5}' | tail -n +2 formatted_pey.vcf | awk '$5=! "NA" {print $0}' formatted_pey2.vcf | sed 's/ /\t/g' test.vcf > test.vcf
+ 
