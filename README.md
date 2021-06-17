@@ -26,4 +26,6 @@ note: All authors were PhD students at the University of Barcelona when the work
 
 ## Methods
 
+Go terms: [http://amigo.geneontology.org/amigo/term/GO:0098978](http://amigo.geneontology.org/amigo/term/GO:0098978)
+
 ## Results
