@@ -1,6 +1,8 @@
 library(tidyverse)
+library(ggrepel)
 library(reshape2)
 library(gprofiler2)
+library(fdrtool)
 
 #Reads ExPecto output, including all genes under positive selection according to Peyregne et al. 2017
 out <- read_csv("output.csv")
@@ -176,8 +178,8 @@ a1 <- ggplot(genecone, aes(sum, abs)) +
   geom_point(colour = (ifelse((genecone$id == "glut" & (genecone$variable %in% braintissues)), 
                                  '#20A387FF', NA)), size = 0.3) +
   labs(title="", x ="Sum of absolute expression", y = "Absolut sum of absolute expression") + 
-  geom_label_repel(data = h[3,], aes(x=sum, y=abs, label=paste(gene, "-", variable)), box.padding = 0.5, max.overlaps = Inf) +
-  geom_label_repel(data = h[90408,], aes(x=sum, y=abs, label=paste(gene, "-", variable)), box.padding = 0.5, max.overlaps = Inf) 
+  geom_label_repel(data = lab[3,], aes(x=sum, y=abs, label=paste(gene, "-", variable)), box.padding = 0.5, max.overlaps = Inf) +
+  geom_label_repel(data = lab[90408,], aes(x=sum, y=abs, label=paste(gene, "-", variable)), box.padding = 0.5, max.overlaps = Inf) 
 dev.off()
 
 
