@@ -37,23 +37,20 @@ Downregulated glutamatergic synaptic activity as a result of positive selection 
 - We compared genes enriched at the Glutamatergic Synapse (GO category [0098978](http://amigo.geneontology.org/amigo/term/GO:0098978)) with other genes targeted in recent human evolution
 
 ## Results
+| ![Fig. e](./figures/tissue_average.pdf) | 
+|:--:| 
+| **e.** Glutamatergic signaling gene variants are significantly downregulated (p < 0.01) compared to non-glutamatergic variants when averaged across tissues (red dots). |
 
-<img src="figures/tissue_average.pdf" width="50%">
-<strong>e.</strong> Glutamatergic signaling gene variants are significantly downregulated (p < 0.01) compared to non-glutamatergic variants when averaged across tissues (red dots).
+| ![Fig. f](./figures/all_variants.png) | 
+|:--:| 
+| **f.** Range of up- and downregulated expression for individual glutamatergic signaling gene versus non-glutamatergic variants. Horizontal lines at zero denote no change in expression. |
+
+| ![Fig. g](./figures/coneplot.pdf) | 
+|:--:| 
+| **g.** Tendency towards downregulation of glutamatergic signaling genes across all tissues (purple) and in brain tissues (blue) versus other genes (grey). |
+
+| ![Fig. h](./figures/DEPlot.pdf) | 
+|:--:| 
+| **h.** Significantly differentially expressed genes (red, FDR < 0.01), including glutamatergic signaling genes (named). Genes left of the zero are downregulated |
 
 
-
-<figure>
-<img src="figures/all_variants.png" width="50%">
-<figcaption><strong>f.</strong> Range of up- and downregulated expression for individual glutamatergic signaling gene versus non-glutamatergic variants. Horizontal lines at zero denote no change in expression</figcaption>
-</figure>
-
-<figure>
-<img src="figures/coneplot.pdf" width="50%">
-<figcaption><strong>g.</strong> Tendency towards downregulation of glutamatergic signaling genes across all tissues (purple) and in brain tissues (blue) versus other genes (grey)</figcaption>
-</figure>
-
-<figure>
-<img src="figures/DEPlot.pdf" width="50%">
-<figcaption><strong>h.</strong> Significantly differentially expressed genes (red, FDR < 0.01), including glutamatergic signaling genes (named). Genes left of the zero are downregulated</figcaption>
-</figure>
