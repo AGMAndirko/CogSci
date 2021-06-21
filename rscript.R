@@ -194,12 +194,19 @@ all <- all %>%
 
 # Calculates z scores and local FDR
 all  <- all %>% 
-  mutate(z_scores = value-mean(value)/sd(value))
+  mutate(z_scores = value-mean(value)/sd(value)) %>% 
+  mutate(glutamateornot = gene %in% glutamate_genes)
 fdr.out <- fdrtool(all[[3]], statistic="normal")
+all$fdr <- fdr.out$lfdr
 
 # Creates df for highlights
 highlight <- all %>%
   filter(glutamateornot == TRUE)
+
+namedf <- gProfileR::gconvert(highlight$gene)
+#This should give all trues TRUE:
+table(namedf$query == highlight$gene)
+highlight$name <- namedf$name
 
 #Filters genes by false discovery rate cutoff
 DE <- all %>% 
