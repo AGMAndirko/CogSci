@@ -94,7 +94,7 @@ boxplot_everything <- as.data.frame(boxplot_everything)
 # Figure 2: boxplot with all variants
 # Note: Might be heavy or slow due to the number of variants
 pdf("boxplot.pdf")
-aaa <- ggplot(boxplot_everything, aes(ids, values))+ 
+ggplot(boxplot_everything, aes(ids, values))+ 
   theme_minimal() +
   geom_boxplot() +
   labs(title="Average per tissue",
@@ -132,7 +132,7 @@ a <- ggplot(test, aes(avg_value, gene))+
        x ="Category", y = "Average predicted value") +
   theme(legend.position = "none")
 
-a <- a + facet_wrap(~ id)
+#a <- a + facet_wrap(~ id)
 a
 
 # Creates another ex profeso dataframe, resets "test" as null to avoid confusion
@@ -169,7 +169,7 @@ lab$gene <- stringr::str_replace_all(lab$gene, "ENSG00000178235", "SLITRK1")
 
 # Coneplot, highlighting brain tissues though ifelse conditionals + labels for extreme values
 pdf("coneplot.pdf")
-a1 <- ggplot(genecone, aes(sum, abs)) +
+ggplot(genecone, aes(sum, abs)) +
   theme_minimal() +
   coord_flip() +  
   geom_point(colour = 'grey', size = 0.1 ) + 
