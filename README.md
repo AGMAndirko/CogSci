@@ -1,56 +1,7 @@
 This repository contains all information related to the project
-"Gene expression under human self-domestication: an in silico exploration of modern human high-frequency variants",
+**"Gene expression under human self-domestication: an in silico exploration of modern human high-frequency variants"**,
 presented by Thomas O'Rourke, [Pedro Tiago Martins](https://ptmartins.info), and [Alejandro Andirkó](https://andirko.eu) as a student poster at the [COGSCI 2021 meeting](https://cognitivesciencesociety.org/cogsci-2021/)
-(Vienna, 26th – 29th July 2021). This includes:
+(Vienna, 26th – 29th July 2021).
 
-- references
-- code
-- supplementary figures
-- the poster presented at the meeting
-- a brief summary of what was presented, below
-
-# Summary
-**Gene expression under human self-domestication: an in silico exploration of modern human high-frequency variants**  
-Thomas O'Rourke<sup>1</sup>*, Pedro Tiago Martins<sup>1,2</sup>, Alejandro Andirkó<sup>1</sup>  
-<sup>1</sup>*University of Barcelona*
-<sup>2</sup>*University of Ljubljana*  
-*correspondence: [tomo.orouke@gmail.com](mailto:tomo.orourke@gmail.com).
-
-note: All authors were PhD students at the University of Barcelona when the work first started. At the time of presentation, all authors had completed their PhDs.
-
-## Convergent Human-Domesticate Evolution
-
-Shared differences:
-- craniofacial alterations
-- attenuated stress signaling
-- reduced reactive agression
-- increased social exploration
-
-### Domestication syndrome
-### Glutamate receptors
-
-## Hypothesis
-Downregulated glutamatergic synaptic activity as a result of positive selection in modern humans.
-## Methods
-- Using [ExPecto](https://github.com/FunctionLab/ExPecto), we explored predicted expression resulting from high-frequency/fixed variants identified by Peyrègne et al. 2017
-- We generated ≈ 1 million predicted transcriptional reads across 218 human tissues
-- We compared genes enriched at the Glutamatergic Synapse (GO category [0098978](http://amigo.geneontology.org/amigo/term/GO:0098978)) with other genes targeted in recent human evolution
-
-## Results
-| ![Fig. e](./figures/tissue_average.pdf) | 
-|:--:| 
-| **e.** Glutamatergic signaling gene variants are significantly downregulated (p < 0.01) compared to non-glutamatergic variants when averaged across tissues (red dots). |
-
-| ![Fig. f](./figures/all_variants.png) | 
-|:--:| 
-| **f.** Range of up- and downregulated expression for individual glutamatergic signaling gene versus non-glutamatergic variants. Horizontal lines at zero denote no change in expression. |
-
-| ![Fig. g](./figures/coneplot.pdf) | 
-|:--:| 
-| **g.** Tendency towards downregulation of glutamatergic signaling genes across all tissues (purple) and in brain tissues (blue) versus other genes (grey). |
-
-| ![Fig. h](./figures/DEPlot.pdf) | 
-|:--:| 
-| **h.** Significantly differentially expressed genes (red, FDR < 0.01), including glutamatergic signaling genes (named). Genes left of the zero are downregulated |
-
+All code for analyses and figures is included as an R Notebook: [cogsci2021.Rmd](cogsci2021.Rmd). You can also download the knitted HTML version and open it in a browser [cogsci2021.nb.html](cogsci2021.nb.html).
 
